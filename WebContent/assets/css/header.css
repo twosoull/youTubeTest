@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+/***********공통*****************/
+body,
+div,
+ul,
+li,
+dl,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px "맑은 고딕", 돋움, 굴림;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/****************공통******************/
+
+.wrap {
+  max-width: 100%;
+  overflow: hidden;
+}
+.wrap .container {
+  width: 1050px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wrap .container .header {
+  width: 1050px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.wrap .container .header a {
+  overflow: hidden;
+  float: left;
+  height: 60px;
+  font-size: 16px;
+  color: #333;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*헤더적용*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/*로고*/
+.header_logo {
+  width: 140px;
+}
+
+.header_logo img {
+  width: 140px;
+}
+
+/*스파링매치 스토어*/
+.header_menu {
+  width: 500px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header_menu span {
+  width: 150px;
+  height: 80px;
+  display: block;
+}
+
+.header_menu a span:hover {
+  color: #e60012;
+}
+.header_menu a span:active {
+  color: #e60012;
+}
+
+.header_menu #no1 {
+  margin: 30px 10px 0px 115px;
+  color: #e60012;
+}
+
+.header_menu #no2 {
+  margin: 30px 20px 0px 18px;
+}
+
+/*아이콘*/
+.header_icon {
+  width: fit-content;
+  display: flex;
+}
+.header_icon img {
+  width: 30px;
+  margin: 20px 0px 0px 30px;
+}
+#login {
+  display: flex;
+  margin-top: 30px;
+  width: 53px;
+  height: fit-content;
+}
+/*마이페이지 사이드바*/
+
+/*상단 마이페이지 글자*/
+
+.middle {
+  width: 1050;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+.side_menu {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+
+.side_menu ul {
+  margin-bottom: 50px;
+}
+
+#side_menu_mypage {
+  margin-bottom: 25px;
+}
+
+.side_menu #side_menu_mypage li{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.side_menu .title span{
+  font-weight: bold;
+  font-size: 16px;
+}
+.side_menu #side_menu_booking li,
+.side_menu #side_menu_delivery li,
+.side_menu #side_menu_user li {
+  border-top: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.side_menu ul .side_menu_last {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.side_menu li a {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side_menu li span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.side_menu li div {
+  width: 16px;
+}
+
+/*메뉴 이름*/
+.side_menu li .menu {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/*메뉴 화살표*/
+.side_menu li .arrow {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+/*사이드메뉴 여기까지*/
+
+
+/*메인페이지*/
+.banner {
+  display: flex;
+  margin-top: 20px;
+  height: 250px;
+}
+.space {
+  margin-top: 50px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px #dddfe1 solid;
+}
+
+.banner div {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.banner #main_3 a:hover {
+  color: #e60012;
+}
+
+.footer{
+  width: 100%;
+  height: fit-content;
+  text-align : center;
+  font-size: 15px;
+  margin-top : 150px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+.footer div{
+	padding : 0px 25px 0px 25px;
+	border-right: 1px #dddfe1 solid;
+}
+
+#footer	{
+	border: none;
+}
+	
+
+/*로그인 페이지 추가*/
+/*타이틀 리스트 구분줄*/
+
+.line_1 {
+  height: 3px;
+  width: 1050px;
+  margin: 10px 0px 5px 0px;
+  background-color: black;
+}
+
+/*이걸로 높이 조절하면됨*/
+
+.loginform {
+  width: 525px;
+  margin-bottom: 80px
+}
+
+.login {
+  font-size: 16px;
+  margin-left: 80px;
+  margin-top: 120px;
+  min-height: 100px;
+}
+
+.login tr td {
+  vertical-align: top;
+  text-align: left;
+}
+
+.login .basic {
+  height: 30px;
+}
+
+.login .basic input {
+  width: 146px;
+  height: 10px;
+  padding: 8px 6px;
+  border: 1px solid #dddfe1;
+  border-radius: 0px;
+}
+
+/*버튼*/
+
+.login_btn {
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+}
+
+.login_btn .login_insert_btn,
+.login_btn .join_btn {
+  border-radius: 0px;
+  color: #000000;
+  background-color: white;
+  font-size: 13px;
+  padding: 3px 2px 3px 2px;
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+  border: 1px solid #dddfe1;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.login_btn .login_insert_btn:hover,
+.login_btn .join_btn:hover {
+  background: #d4d4d4;
+  text-decoration: none;
+}
+
+/* 버튼 위치조절 */
+.login_btn {
+  margin: 30px 100px 20px 50px;
+}
+
+.login_header {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+
+.login_notice_1 {
+  margin-left: 80px;
+}
+.login_middle_img {
+  display: flex;
+  margin-left: 40px;
+}
+.login_middle_glove {
+  width: 280px;
+}
+
+.login_notice_h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-right: 100px;
+}
+.login_notice_h2 > span {
+  font-size: 35px;
+  color: #e60012;
+}
+.login_title {
+  font-size: 24px;
+  margin: 70px 0px 0px 0px;
+  font-weight: bold;
+}
+
+/*로그인실패 경고문구*/
+.loginform p {
+  font-size: 15px;
+  margin: 0px 0px 0px 40px;
+  color: #e60012;
+}
+
+/*로그인 잘못된 접근시*/
+.error_login {
+	margin-left : 30px;
+  	font-size: 30px;
+     font-weight: bold;
+     color: #e60012;
+  }
+
+.login_btn a{
+	margin-left : 5px;
+}
+
+/*회원가입 성별란*/
+.info_table .gender{
+	margin-left : 5px;
+	margin-bottom: 12px;
+}
+
+#main_2 strong {
+	color: #e60012;
+}
